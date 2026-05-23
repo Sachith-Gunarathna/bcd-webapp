@@ -7,6 +7,8 @@
     <groupId>lk.jiat.web</groupId>
     <artifactId>bcd-webapp</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
+    <name>bcd-webapp</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -22,4 +24,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.name}</finalName>
+    </build>
 </project>
