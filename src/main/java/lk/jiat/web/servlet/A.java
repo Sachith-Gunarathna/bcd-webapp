@@ -13,6 +13,11 @@ public class A extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("This is a servlet A");
+       m();
+        resp.getWriter().write("This is a servlet b");
+    }
+
+    public void m(){
+        System.out.println("A m()");
     }
 }
